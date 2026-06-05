@@ -615,26 +615,50 @@ p {
 }
 
 .social-link {
+  --social-color: var(--brown);
   display: inline-grid;
   place-items: center;
   width: 42px;
   height: 42px;
-  border: 1px solid rgba(118, 80, 46, 0.32);
+  border: 1px solid rgba(118, 80, 46, 0.24);
   border-radius: 999px;
-  color: var(--brown);
+  color: var(--social-color);
   background: rgba(255, 250, 243, 0.34);
   box-shadow: 0 10px 24px rgba(83, 56, 33, 0.08);
-  font-size: 0.68rem;
-  font-weight: 800;
-  letter-spacing: 0;
-  line-height: 1;
   transition: background 180ms ease, color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.social-icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.social-instagram {
+  --social-color: #c13584;
+}
+
+.social-facebook {
+  --social-color: #1877f2;
+}
+
+.social-youtube {
+  --social-color: #ff0000;
+}
+
+.social-tiktok {
+  --social-color: #111;
+}
+
+.social-linkedin {
+  --social-color: #0a66c2;
 }
 
 .social-link:hover,
 .social-link:focus-visible {
+  border-color: var(--social-color);
   color: var(--white);
-  background: var(--brown);
+  background: var(--social-color);
   box-shadow: 0 14px 28px rgba(83, 56, 33, 0.16);
   transform: translateY(-2px);
 }
