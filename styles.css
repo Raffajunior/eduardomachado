@@ -24,7 +24,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: "Avenir Next", "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.75;
 }
@@ -183,7 +183,7 @@ a {
 }
 
 .section-inner {
-  width: min(100%, 1792px);
+  width: min(100%, 1400px);
   margin: 0 auto;
 }
 
@@ -755,7 +755,7 @@ textarea:focus {
 
 .footer-inner {
   display: flex;
-  width: min(100%, 1792px);
+  width: min(100%, 1400px);
   margin: 0 auto;
   align-items: center;
   justify-content: space-between;
